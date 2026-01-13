@@ -24,7 +24,7 @@ sudo apt-get install -y ccache clang lld
 
  
 
-TRITON_PLUGIN_DIRS=third_party/triton-shared  TRITON_BUILD_WITH_CLANG_LLD=true TRITON_BUILD_WITH_CCACHE=true python3 -m pip install --no-build-isolation -vvv '.[tests]'   -i https://pypi.doubanio.com/simple/ --trusted-host pypi.doubanio.com -vvv  
+TRITON_PLUGIN_DIRS=../triton-shared  TRITON_BUILD_WITH_CLANG_LLD=true TRITON_BUILD_WITH_CCACHE=true python3 -m pip install --no-build-isolation -vvv '.[tests]'   -i https://pypi.doubanio.com/simple/ --trusted-host pypi.doubanio.com -vvv  
 
 首次运行会有一些下载。如果网不好要多尝试几次。（也可以加-I 选项提速 选择比较好的源） 
 
